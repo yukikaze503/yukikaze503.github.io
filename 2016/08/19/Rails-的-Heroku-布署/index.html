@@ -3,14 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Rails 的 Heroku 布署 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="我们写好的Rails应用，在开发环境中，需要布署到生产环境，才可以让别人在网上访问。
+Heroku 专门用于部署 Rails 和其他 Web 应用，部署 Rails 应用的过程非常简单，只需要 将源码纳入 Git 版本控制系统，而且很多情况下，使用 Heroku 的免费套餐就可以了。
+
+Heroku 是一个商业的Rails主机托管解决方案，提供的是“无需准备的部署服务”，因为操作和扩展都是自动的，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rails 的 Heroku 布署">
+<meta property="og:url" content="http://yoursite.com/2016/08/19/Rails-的-Heroku-布署/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="我们写好的Rails应用，在开发环境中，需要布署到生产环境，才可以让别人在网上访问。
+Heroku 专门用于部署 Rails 和其他 Web 应用，部署 Rails 应用的过程非常简单，只需要 将源码纳入 Git 版本控制系统，而且很多情况下，使用 Heroku 的免费套餐就可以了。
+
+Heroku 是一个商业的Rails主机托管解决方案，提供的是“无需准备的部署服务”，因为操作和扩展都是自动的，">
+<meta property="og:updated_time" content="2016-08-19T14:52:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Rails 的 Heroku 布署">
+<meta name="twitter:description" content="我们写好的Rails应用，在开发环境中，需要布署到生产环境，才可以让别人在网上访问。
+Heroku 专门用于部署 Rails 和其他 Web 应用，部署 Rails 应用的过程非常简单，只需要 将源码纳入 Git 版本控制系统，而且很多情况下，使用 Heroku 的免费套餐就可以了。
+
+Heroku 是一个商业的Rails主机托管解决方案，提供的是“无需准备的部署服务”，因为操作和扩展都是自动的，">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +72,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Rails-的-Heroku-布署" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Rails-的-Heroku-布署" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/08/19/Rails-的-Heroku-布署/" class="article-date">
   <time datetime="2016-08-19T08:22:50.000Z" itemprop="datePublished">2016-08-19</time>
@@ -74,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/19/Rails-的-Heroku-布署/">Rails 的 Heroku 布署</a>
+    <h1 class="article-title" itemprop="name">
+      Rails 的 Heroku 布署
     </h1>
   
 
@@ -144,101 +155,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-first-step" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/30/first-step/" class="article-date">
-  <time datetime="2016-07-30T13:56:29.000Z" itemprop="datePublished">2016-07-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/30/first-step/">配置HEXO博客布署到GitHub</a>
-    </h1>
+    <a href="/2016/07/30/first-step/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">配置HEXO博客布署到GitHub</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>从晚上7点折腾到9点半，两个半小时终于搞定了。<br>一开始看了助教推荐的 <strong>简书</strong> 上的文章:<br><a href="http://www.jianshu.com/p/fe5b4b657778" target="_blank" rel="external">如何搭建一个独立博客——简明Github与Hexo教程</a></p>
-<p>在安装Node.js的时候遇到了点问题，而且我用的是MAC系统，所以又参考了另外一篇:<br><a href="http://www.jianshu.com/p/69f5601f1b0f" target="_blank" rel="external">Mac OS 下 Hexo 安装</a><br>搞定了HEXO的安装。</p>
-<p>配置GitHub的Repository的过程很顺利，是参考第一篇文章完成的。<br>只是在最后deploy时失败了，提示无法识别type: github<br>上<a href="http://cn.bing.com/?pc=APPT" target="_blank" rel="external">必应</a>搜了一下，有人回答：</p>
-<blockquote>
-<p>hexo 更新到3.0之后，deploy的type 的github需要改成git</p>
-</blockquote>
-<p>修改之后就成功了😁</p>
-<p>Markdown的语法还真是简单，我看了一个比较全的<a href="http://wowubuntu.com/markdown/index.html" title="Markdown语法说明(简体中文版)" target="_blank" rel="external">语法说明</a>，基本是所见即所得，还支持emoji，以后可以多写写，GOOD NIGHT😴🌙</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/30/first-step/" data-id="cis1wufpq00010lp5j4qfrvps" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HEXO-GitHub/">HEXO, GitHub</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/30/hello-world/" class="article-date">
-  <time datetime="2016-07-30T12:25:45.000Z" itemprop="datePublished">2016-07-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/30/hello-world/" data-id="cis1wufpt00020lp5u8f3a0uk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
